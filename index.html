@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spin the Wheel</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="container"><header><h1>🎡 Spin the Wheel</h1><p>Add names, spin the wheel and find your winner!</p></header>
+<div class="wheel-section"><div class="wheel-wrapper"><div class="pointer"></div><canvas id="wheel" width="500" height="500"></canvas></div><button id="spinBtn" class="spin-btn">SPIN NOW</button><div id="winnerBox" class="winner-box"><span id="winnerText">Winner will appear here!</span></div></div>
+<div class="controls"><div class="card"><h2>➕ Add Name</h2><div class="input-group"><input type="text" id="nameInput" placeholder="Enter participant name"><button id="addBtn">Add</button></div></div>
+<div class="card"><h2>🗑️ Remove Name</h2><div class="input-group"><select id="removeSelect"><option value="">Select a name</option></select><button id="removeBtn" class="remove-btn">Remove</button></div></div>
+<div class="card"><div class="list-header"><h2>👥 Participants</h2><span id="count">0 Names</span></div><ul id="nameList"></ul><button id="clearBtn" class="clear-btn">Clear All Names</button></div></div></div>
+<div id="popup" class="popup-overlay"><div class="popup"><div class="trophy">🏆</div><h2>Congratulations!</h2><p id="popupWinner"></p><button id="closePopup">Awesome!</button></div></div><script src="script.js"></script></body></html>
